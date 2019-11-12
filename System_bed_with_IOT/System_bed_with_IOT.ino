@@ -4,9 +4,9 @@
 #include <BlynkSimpleEsp8266.h>
 #include <TridentTD_LineNotify.h>
 
-char auth[] = "NbmAStvN5m4OXa3MqtALy5ElG4SNVafA";
-char ssid[] = "Jutamas Soiraya";
-char pass[] = "0814242933";
+char auth[] = " Token Blynk ";
+char ssid[] = " Wifi Name ";
+char pass[] = " Password ";
 
 #define BLYNK_PRINT Serial
 #define DHTPIN 12
@@ -87,7 +87,7 @@ BLYNK_WRITE(V4){
 }
 
 void setup() {
-  LINE.setToken("fT6aoFVE3HXj4ZD4YaymFwY4ZDb4ncdbGE9Y1N1eNj4");
+  LINE.setToken("Token Line");
   Serial.begin(9600);
   pinMode(air,OUTPUT);
   pinMode(warmlight,OUTPUT);
